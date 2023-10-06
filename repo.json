@@ -1,0 +1,21 @@
+{
+  "Author": "goat",
+  "Name": "Ultrawide Cutscenes",
+  "Punchline": "Remove letterboxing from cutscenes on ultrawide monitors.",
+  "Description": "This plugin removes the \"letterboxing\" bars when watching cutscenes on ultrawide monitors.\nBeware! You may see things that you are not supposed to be seeing, such as upcoming NPCs popping in or T-posing.\n\nThanks to aers for finding this.",
+  "InternalName": "Dalamud.FullscreenCutscenes",
+  "RepoUrl": "https://github.com/Shinryin/UltrawideCutscenes",
+  "ApplicableVersion": "any",
+  "DalamudApiLevel": 9,
+  "IsHide": "False",
+  "IsTestingExclusive": "False",
+  "DownloadCount": 1,
+  "DownloadLinkInstall": "https://github.com/Shinryin/UltrawideCutscenes/releases/download/V9/Dalamud.FullscreenCutscenes.zip",
+  "DownloadLinkUpdate": "https://github.com/Shinryin/UltrawideCutscenes/releases/download/V9/Dalamud.FullscreenCutscenes.zip",
+  "DownloadLinkTesting": "https://github.com/Shinryin/UltrawideCutscenes/releases/download/V9/Dalamud.FullscreenCutscenes.zip",
+  "Tags": [
+    "ultrawide",
+    "cutscene",
+    "fullscreen"
+  ]
+}
