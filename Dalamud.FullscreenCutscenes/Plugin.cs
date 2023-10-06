@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Dalamud.Game.Command;
 using Dalamud.IoC;
 using Dalamud.Plugin;
@@ -24,8 +24,9 @@ namespace Dalamud.FullscreenCutscenes
 
         public Plugin(
             [RequiredVersion("1.0")] DalamudPluginInterface pluginInterface,
-            [RequiredVersion("1.0")] CommandManager commandManager,
-            [RequiredVersion("1.0")] SigScanner targetScanner)
+            [RequiredVersion("1.0")] ICommandManager commandManager,
+            [RequiredVersion("1.0")] ISigScanner targetScanner,
+            [RequiredVersion("1.0")] IGameInteropProvider gameInteropProvider)
         {
             this.PluginInterface = pluginInterface;
             this.CommandManager = commandManager;
