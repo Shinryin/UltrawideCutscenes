@@ -4,6 +4,7 @@ using Dalamud.IoC;
 using Dalamud.Plugin;
 using Dalamud.Game;
 using Dalamud.Hooking;
+using Dalamud.Plugin.Services;
 
 namespace Dalamud.FullscreenCutscenes
 {
@@ -18,7 +19,7 @@ namespace Dalamud.FullscreenCutscenes
         private Hook<UpdateLetterboxingDelegate>? updateLetterboxingHook;
 
         private DalamudPluginInterface PluginInterface { get; init; }
-        private CommandManager CommandManager { get; init; }
+        private ICommandManager CommandManager { get; init; }
         private Configuration Configuration { get; init; }
 
         public Plugin(
@@ -42,7 +43,7 @@ namespace Dalamud.FullscreenCutscenes
 
             if (targetScanner.TryScanText("4C 8B DC 55 48 8B EC", out var ptr))
             {
-                this.updateLetterboxingHook = Hook<UpdateLetterboxingDelegate>.FromAddress(ptr, UpdateLetterboxingDetour);
+                this.updateLetterboxingHook = gameInteropProvider.HookFromAddress<UpdateLetterboxingDelegate>(ptr, UpdateLetterboxingDetour);
                 this.updateLetterboxingHook.Enable();
             }
 
