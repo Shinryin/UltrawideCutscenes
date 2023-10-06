@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Authors></Authors>
     <Company></Company>
-    <Version>1.0.0.1</Version>
-    <Description>A sample plugin.</Description>
+    <Version>1.0.0.2</Version>
+    <Description>V9 Fork UltrawideCutscenes</Description>
     <Copyright></Copyright>
-    <PackageProjectUrl>https://github.com/goatcorp/SamplePlugin</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Shinryin/UltrawideCutscenes</PackageProjectUrl>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
 
